@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import "./App.css";
+import NasaCard from './components/NasaCard';
+
+
 
 function App() {
 
@@ -19,9 +22,11 @@ function App() {
 
   return (
     <div className="App">
-      <p>
-        hello From App
-      </p>
+      <NasaCard 
+      title = {state.title}
+      url = {state.url}
+      date = {state.date}
+      />
     </div>
   );
 }
