@@ -7,10 +7,11 @@ export default function NasaCard(props) {
     console.log(props)
     return (
         <CardContainer>
-            <img src = {props.url} alt = 'astronomy picture of the day' />
+            <img src = {props.hdurl} alt = 'astronomy picture of the day' />
             <div className = 'overlay'>
                 <h1>{props.title}</h1>
                 <p>{props.date}</p>
+                <p className = 'explanation'>{props.explanation}</p>
             </div>
             
         </CardContainer>
@@ -40,6 +41,14 @@ const CardContainer = styled.div `
             color: white;
             top: 9%;
             left: 1%;
+        }
+        .explanation {
+            position: absolute;
+            color: white;
+            top: 16%;
+            left: 1%;
+            width: 50%;
+            font-size: 1.2rem;
         }
     }
     

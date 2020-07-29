@@ -24,8 +24,9 @@ function App() {
     <div className="App">
       <NasaCard 
       title = {state.title}
-      url = {state.url}
+      hdurl = {state.hdurl}
       date = {state.date}
+      explanation = {state.explanation}
       />
     </div>
   );
