@@ -7,6 +7,7 @@ export default function NasaCard(props) {
     console.log(props)
     return (
         <CardContainer>
+            
             <img src = {props.hdurl} alt = 'astronomy picture of the day' />
             <div className = 'overlay'>
                 <h1>{props.title}</h1>
