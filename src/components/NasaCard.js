@@ -87,13 +87,15 @@ const CardContainer = styled.div `
             color: white;
             top: 16%;
             left: 1%;
-            width: 36%;
-            font-size: 1.2rem;
+            width: 63%;
+            font-size: 1.6rem;
             @media (max-width: 1200px) {
                 width: 66%;
+                font-size: 1.2rem;
             }
             @media (max-width: 768px) {
                 width: 99%;
+                font-size: 1rem;
             }
         }
         .infoShowing-false {
