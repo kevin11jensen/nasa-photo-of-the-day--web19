@@ -41,11 +41,23 @@ export default App;
 
 const MainContainer = styled.div `
   margin: 0;
+  overflow: hidden;
   .App {
     button {
       position: absolute;
       left: 1%;
       bottom: 3%;
+      background: transparent;
+      font-size: 1.6rem;
+      color: white;
+      padding: 2% 5%;
+      border: 2px solid white;
+      border-radius: .5rem;
+      cursor: pointer;
+      &:hover {
+        background: rgb(254, 254, 254, .3);
+        transition: .5s;
+      }
     }
   }
 `
