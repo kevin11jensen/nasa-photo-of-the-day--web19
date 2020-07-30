@@ -45,7 +45,7 @@ const MainContainer = styled.div `
   .App {
     button {
       position: absolute;
-      left: 1%;
+      right: 1%;
       bottom: 3%;
       background: transparent;
       font-size: 1.6rem;
